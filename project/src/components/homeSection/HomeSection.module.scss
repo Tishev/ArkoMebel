@@ -1,0 +1,23 @@
+.content {
+    @apply mt-44 flex items-center justify-between;
+    .textContent {
+        @apply w-[870px];
+        .title {
+            @apply text-white font-bold text-6xl leading-tight;
+        }
+        .text {
+            @apply mb-11 mt-5 font-normal text-base leading-7 text-white;
+        }
+        .btn {
+            @apply px-12 py-6 bg-red font-normal text-base leading-7 text-white rounded-xl transition duration-700 ease-out;
+            &:hover {
+                @apply bg-rose-700 text-opacity-80;
+            }
+            &:focus {
+                @apply bg-rose-400;
+            }
+        }
+    }
+    .img {
+    }
+}

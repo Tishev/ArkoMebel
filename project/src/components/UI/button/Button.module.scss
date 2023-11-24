@@ -1,0 +1,6 @@
+.btn {
+    @apply bg-blue text-center whitespace-nowrap text-white text-center px-10 py-3 rounded-2xl transition duration-700 ease-in-out;
+    &:hover {
+        @apply bg-violet-800;
+    }
+}

@@ -1,11 +1,7 @@
 import React from 'react';
-
+import styles from './Button.module.scss';
 const Button = () => {
-    return (
-        <button className="bg-blue text-white text-center px-10 py-3 rounded-xl">
-            Личный кабинет
-        </button>
-    );
+    return <button className={styles.btn}>Личный кабинет</button>;
 };
 
 export default Button;

@@ -1,0 +1,35 @@
+.header {
+    @apply py-9 border-b border-white border-opacity-40;
+}
+.navigation {
+    @apply flex items-center justify-between;
+    > .logo {
+        &:hover {
+            @apply cursor-pointer;
+        }
+    }
+    > .ul {
+        @apply flex items-center justify-between gap-4 ml-10 mr-11;
+        > .li {
+            @apply transition duration-500 ease-in-out text-center whitespace-nowrap text-base font-normal leading-relaxed text-white;
+            &:hover {
+                @apply cursor-pointer opacity-70;
+            }
+        }
+    }
+}
+.callBlock {
+    @apply mr-6;
+    .numberPhone {
+        @apply text-center whitespace-nowrap text-base font-normal leading-relaxed text-white;
+        &:hover {
+            @apply cursor-pointer;
+        }
+    }
+    .callback {
+        @apply text-center whitespace-nowrap text-base font-normal leading-relaxed text-white underline transition duration-500 ease-in-out;
+        &:hover {
+            @apply cursor-pointer opacity-70;
+        }
+    }
+}
