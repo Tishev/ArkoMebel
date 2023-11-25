@@ -1,14 +1,14 @@
 .item {
-    @apply pt-5 px-8 pb-8 min-h-[272px] w-[344px] bg-gray rounded-2xl flex items-center  flex-col;
+    @apply pt-5 px-8 pb-8 h-[320px] w-[344px] bg-gray rounded-2xl flex items-center  flex-col;
     .bgImg {
         @apply mb-5 p-[27px] bg-white rounded-xl;
         .img {
         }
     }
     .title {
-        @apply font-medium text-lg leading-6;
+        @apply my-5 font-medium text-lg leading-6;
     }
     .text {
-        @apply text-center;
+        @apply text-center w-full;
     }
 }
