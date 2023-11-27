@@ -1,0 +1,45 @@
+.footer {
+    @apply bg-darkBlue mt-[30px];
+}
+
+.content {
+    @apply flex py-[110px] justify-between;
+
+    .leftContent {
+        @apply flex flex-col justify-start;
+
+        .navigation {
+            @apply flex flex-col items-start gap-[10px];
+            .li {
+                @apply text-white font-normal text-[16px];
+                line-height: 19px;
+            }
+        }
+    }
+
+    .centerContent {
+        @apply flex flex-col justify-start;
+
+        .contacts {
+            @apply flex justify-between gap-28;
+        }
+    }
+}
+.text {
+    @apply text-white font-normal text-[16px];
+    line-height: 19px;
+}
+.subtext {
+    @apply text-white opacity-[0.57] mt-[5px] mb-[10px];
+    font-size: 14px;
+    line-height: 17px;
+}
+.title {
+    @apply font-medium text-2xl text-white mb-[15px];
+}
+.h2 {
+    @apply text-white font-medium text-xl mb-3;
+}
+.h2other {
+    @apply text-white font-medium text-xl mb-3 mt-[20px];
+}

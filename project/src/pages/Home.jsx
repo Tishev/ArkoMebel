@@ -111,7 +111,7 @@ const Home = () => {
                             <h2 className="font-semibold text-4xl mb-[25px]">
                                 Оставьте отзыв о нас
                             </h2>
-                            <div className="flex justify-between items-center">
+                            <div className="flex justify-between items-center gap-4">
                                 {dataFeedbackItems.map((item) => (
                                     <FeedbackItems
                                         key={item.id}

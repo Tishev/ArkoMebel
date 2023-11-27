@@ -1,0 +1,19 @@
+.item {
+    @apply bg-gray flex flex-col items-center p-4 rounded-2xl;
+
+    .img {
+    }
+    .name {
+        @apply mt-[15px] mb-[5px] font-medium text-xl;
+    }
+    .rating {
+        @apply mb-[15px] font-normal text-base;
+    }
+    .btn {
+        @apply transition-all duration-500 ease-out rounded-xl text-white whitespace-nowrap py-3 px-8 bg-blue text-center font-normal text-base;
+
+        &:hover {
+            @apply bg-white text-blue;
+        }
+    }
+}
