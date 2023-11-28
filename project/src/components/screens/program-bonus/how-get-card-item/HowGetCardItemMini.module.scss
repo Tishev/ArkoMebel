@@ -1,8 +1,10 @@
 .item {
     @apply flex justify-between;
-
+    .img {
+        @apply mr-3;
+    }
     .text {
-        @apply flex flex-col gap-[15px];
+        @apply flex flex-col;
         > p {
             @apply text-base font-normal;
         }

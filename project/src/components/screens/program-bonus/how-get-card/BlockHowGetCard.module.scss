@@ -9,10 +9,10 @@
         @apply mt-[50px] flex flex-wrap justify-between gap-[15px];
     }
     .info {
-        @apply flex justify-between items-center gap-[15px];
+        @apply mt-[15px] flex justify-between items-center gap-[15px];
 
         .textItem {
-            @apply bg-beige flex items-center justify-center px-5 py-[74px] rounded-[15px];
+            @apply bg-beige h-[208px] w-[703px] flex items-center justify-center px-5 py-[74px] rounded-[15px];
             .text {
                 @apply font-normal text-black text-base;
                 > span {
@@ -21,10 +21,15 @@
             }
         }
         .infoItem {
-            @apply flex flex-col w-[703px] bg-gray;
-
+            @apply rounded-[15px] h-[208px] w-[703px] py-5 px-7 flex flex-col items-start bg-gray;
+            > h3 {
+                @apply font-medium text-xl mb-5;
+            }
             > div {
-                @apply flex;
+                @apply flex gap-[15px];
+            }
+            > button {
+                @apply py-[10px] px-[15px] border border-blue  rounded-[5px] mt-[15px] flex items-center justify-between gap-[10px];
             }
         }
     }
