@@ -1,0 +1,10 @@
+.item {
+    @apply w-[463px] h-[272px] p-5 bg-gray flex flex-col items-center;
+
+    .itemImg {
+        @apply bg-white flex items-center justify-center rounded-[15px] p-[27px];
+    }
+    .text {
+        @apply mt-5 text-center font-normal text-xl;
+    }
+}

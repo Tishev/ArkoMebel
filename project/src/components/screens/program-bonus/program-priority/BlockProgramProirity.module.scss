@@ -1,0 +1,43 @@
+.content {
+    @apply relative flex flex-col mt-[52px];
+    .title {
+        @apply font-semibold text-black text-4xl;
+    }
+    .text {
+        @apply font-normal text-xl text-black mt-[10px];
+    }
+    .table {
+        @apply flex justify-between border border-blue rounded-[15px] mt-[37px];
+        .column {
+            @apply flex flex-col w-full;
+
+            .p1 {
+                @apply h-[110px] px-3 py-4 block bg-blue text-white font-medium text-sm text-center;
+            }
+            .p2 {
+                @apply block py-3 text-black font-medium text-base text-center;
+            }
+            .p3 {
+                @apply block py-3 bg-gray text-black font-medium text-base text-center;
+            }
+            .p4 {
+                @apply block py-3 text-black font-medium text-base text-center;
+            }
+            .p1tl {
+                @apply px-3 rounded-tl-[15px] h-[110px]  py-4 block bg-blue text-white font-medium text-sm text-center;
+            }
+            .p1tr {
+                @apply px-3 rounded-tr-[15px] h-[110px]  py-4 block bg-blue text-white font-medium text-sm text-center;
+            }
+        }
+    }
+    .descr {
+        @apply flex justify-between items-center mt-[20px];
+        > p {
+            @apply text-lg font-normal;
+        }
+    }
+    .items {
+        @apply flex items-center justify-between gap-[15px] mt-[63px];
+    }
+}

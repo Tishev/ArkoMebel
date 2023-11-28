@@ -44,7 +44,7 @@ const Home = () => {
                             виртуальную карту и получайте
                             <br /> до <b className="font-medium">10% бонусов</b>
                         </p>
-                        <button className="text-blue font-normal text-xl  py-[25px] px-20 border border-solid rounded-2xl border-blue">
+                        <button className="text-blue font-normal text-xl  py-[25px] px-20 border border-solid rounded-2xl border-blue transition-all duration-500 ease-out hover:bg-blue cursor-pointer hover:text-white">
                             Узнать подробнее
                         </button>
                     </div>
@@ -69,8 +69,12 @@ const Home = () => {
                             накопления баллов или оплаты
                         </p>
                         <div className="flex items-center justify-start gap-3">
-                            <img src={appStore} alt="appStore" />
-                            <img src={googlePlay} alt="googlePlay" />
+                            <img className="hover: cursor-pointer" src={appStore} alt="appStore" />
+                            <img
+                                className="hover: cursor-pointer"
+                                src={googlePlay}
+                                alt="googlePlay"
+                            />
                         </div>
                     </div>
                 </section>
@@ -83,7 +87,7 @@ const Home = () => {
                         <p className="mb-10 w-[588px] font-normal text-xl ">
                             Ознакомьтесь со всеми нашими заправочными станциями на карте!
                         </p>
-                        <button className="text-blue font-normal text-xl  py-[25px] px-20 border border-solid rounded-2xl border-blue">
+                        <button className="text-blue font-normal text-xl  py-[25px] px-20 border border-solid rounded-2xl border-blue transition-all duration-500 ease-out hover:bg-blue cursor-pointer hover:text-white">
                             Посмотреть адреса АЗС
                         </button>
                     </div>

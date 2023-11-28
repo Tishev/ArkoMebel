@@ -1,0 +1,14 @@
+.item {
+    @apply w-[463px] p-[30px] h-[268px] flex flex-col items-center bg-gray rounded-[15px];
+
+    .itemCount {
+        @apply bg-blue flex items-center justify-center p-6 rounded-[15px];
+
+        .count {
+            @apply text-white font-medium text-xl;
+        }
+    }
+    .text {
+        @apply text-center mt-[15px];
+    }
+}
