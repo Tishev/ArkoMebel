@@ -1,0 +1,21 @@
+.content {
+    @apply relative mt-[50px];
+    .title {
+        @apply font-semibold text-4xl text-black;
+    }
+    .items {
+        @apply flex justify-between gap-[15px];
+    }
+    .itemMap {
+        @apply relative mt-[30px];
+        .icon {
+            @apply absolute top-[15%] left-[34%];
+        }
+        .icon2 {
+            @apply absolute top-[55%] left-[84%];
+        }
+        .icon3 {
+            @apply absolute top-[65%] left-[76%];
+        }
+    }
+}

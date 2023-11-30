@@ -1,0 +1,20 @@
+.item {
+    @apply bg-gray p-[30px] rounded-[15px] w-full h-full;
+
+    > ul {
+        @apply flex flex-col gap-[10px] mt-[10px];
+        > li {
+            @apply font-normal text-lg text-black;
+        }
+    }
+}
+
+.span {
+    @apply w-[7px] h-[7px] mr-[10px] rounded-full bg-blue;
+}
+.block {
+    @apply flex items-center;
+}
+h2 {
+    @apply font-semibold text-black text-xl w-[270px];
+}
