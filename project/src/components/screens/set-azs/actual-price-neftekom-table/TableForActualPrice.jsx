@@ -5,20 +5,24 @@ const TableForActualPrice = ({ gasStations }) => {
 
     return (
         <table className={styles.table}>
-            <thead className={styles.verh}>
-                <tr>
-                    <th>Адрес АЗС / Наим. топлива</th>
+            <thead className={styles.rowIndex}>
+                <tr className={styles.row}>
+                    <th className={styles.el1}>Адрес АЗС / Наим. топлива</th>
                     {fuelTypes.map((fuelType, index) => (
-                        <th key={index}>{fuelType}</th>
+                        <th className={styles.el} key={index}>
+                            {fuelType}
+                        </th>
                     ))}
                 </tr>
             </thead>
             <tbody>
                 {gasStations.map((station, index) => (
-                    <tr key={index}>
-                        <td>{station.address}</td>
+                    <tr className={index % 2 === 0 ? styles.evenRow : styles.oddRow} key={index}>
+                        <td className={styles.address}>{station.address}</td>
                         {station.fuels.map((fuel, subIndex) => (
-                            <td key={subIndex}>{fuel.price}</td>
+                            <td className={styles.price} key={subIndex}>
+                                {fuel.price.toFixed(2)}
+                            </td>
                         ))}
                     </tr>
                 ))}

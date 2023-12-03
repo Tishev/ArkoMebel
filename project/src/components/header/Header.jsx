@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Header.module.scss';
 import Button from '../UI/button/Button';
 import logo from '../../assets/img/header/logo.svg';
 import { Link } from 'react-router-dom';
 import { paths } from '../../paths';
+import PopupCallBack from '../popupCallBack/PopupCallBack';
 const Header = () => {
+    const [activeCallBack, setActiveCallBack] = useState(false);
     const handleClickScroll = () => {
         window.scrollTo({
             top: window.innerHeight,
@@ -51,11 +53,14 @@ const Header = () => {
                     <div className={styles.callBlock}>
                         <p className={styles.numberPhone}>8 953 586 43 90</p>
 
-                        <p className={styles.callback}>Обратный звонок</p>
+                        <p onClick={() => setActiveCallBack(true)} className={styles.callback}>
+                            Обратный звонок
+                        </p>
                     </div>
                     <Button text={'Личный кабинет'} />
                 </nav>
             </div>
+            {activeCallBack && <PopupCallBack />}
         </header>
     );
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './SetAzsNeftekomItem.module.scss';
+import Circle from '../../../UI/circle/Circle';
 const SetAzsNeftekomItem = ({ title, data, dopData, dopTitle }) => {
     return (
         <div className={styles.item}>
@@ -8,14 +9,14 @@ const SetAzsNeftekomItem = ({ title, data, dopData, dopTitle }) => {
                 {data.map((item) => (
                     <>
                         <div className={styles.block}>
-                            <span className={styles.span} />
+                            <Circle />
                             <li key={item.id}>{item.text}</li>
                         </div>
                         {dopTitle && <h2>{dopTitle}</h2>}
                         {dopData &&
                             dopData.map((item) => (
                                 <div className={styles.block}>
-                                    <span className={styles.span} />
+                                    <Circle />
                                     <li key={item.id}>{item.text}</li>
                                 </div>
                             ))}

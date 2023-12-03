@@ -1,5 +1,27 @@
 .table {
-    .verh {
-        @apply bg-blue;
-    }
+    @apply w-full;
+}
+.rowIndex {
+    @apply bg-blue;
+}
+.el {
+    @apply py-10 text-center font-semibold text-base leading-5 text-white;
+}
+.el:last-of-type {
+    @apply rounded-tr-[15px];
+}
+.el1 {
+    @apply rounded-tl-[15px] text-left pl-5 font-semibold text-base leading-5 text-white;
+}
+
+.address {
+    @apply pl-5 font-normal text-base leading-[40px];
+}
+.price {
+    @apply text-center font-normal text-base leading-[40px];
+}
+.oddRow {
+    @apply bg-beige;
+}
+.evenRow {
 }

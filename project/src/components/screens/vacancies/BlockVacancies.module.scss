@@ -1,0 +1,9 @@
+.content {
+    @apply relative mt-[50px];
+    > h1 {
+        @apply mb-10 font-semibold text-black text-4xl;
+    }
+    .items {
+        @apply flex flex-col;
+    }
+}

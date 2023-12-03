@@ -1,6 +1,6 @@
 .content {
-    @apply relative mt-[60px];
+    @apply relative mt-[60px] mb-[60px];
     .title {
-        @apply font-semibold text-black text-4xl;
+        @apply font-semibold text-black text-4xl mb-5;
     }
 }

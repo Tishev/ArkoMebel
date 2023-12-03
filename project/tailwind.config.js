@@ -11,6 +11,7 @@ module.exports = {
                 red: '#DD2A1B',
                 darkBlue: '#000061',
                 beige: '#F5F5FE',
+                formBgBlue: '#0F0F7E',
             },
         },
     },

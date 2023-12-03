@@ -14,6 +14,7 @@ import play from '../assets/img/Home/play.svg';
 import preview from '../assets/img/Home/preview.png';
 import miniHome from '../assets/img/Home/miniHome.png';
 import FeedbackItems from '../components/UI/feedbackItems/FeedbackItems';
+import Btn from '../components/UI/btn/Btn';
 
 const Home = () => {
     const [dataFeedbackItems, setDataFeedbackItems] = useState(feedbackItems);
@@ -44,9 +45,7 @@ const Home = () => {
                             виртуальную карту и получайте
                             <br /> до <b className="font-medium">10% бонусов</b>
                         </p>
-                        <button className="text-blue font-normal text-xl  py-[25px] px-20 border border-solid rounded-2xl border-blue transition-all duration-500 ease-out hover:bg-blue cursor-pointer hover:text-white">
-                            Узнать подробнее
-                        </button>
+                        <Btn text={'Узнать подробнее'} />
                     </div>
                     <div className="flex items-center w-[702px] h-[398px] py-12 px-28 bg-gray rounded-tl-[64px] rounded-br-[64px] ">
                         <img src={bonusCard} alt="bonus-program" />
@@ -87,9 +86,7 @@ const Home = () => {
                         <p className="mb-10 w-[588px] font-normal text-xl ">
                             Ознакомьтесь со всеми нашими заправочными станциями на карте!
                         </p>
-                        <button className="text-blue font-normal text-xl  py-[25px] px-20 border border-solid rounded-2xl border-blue transition-all duration-500 ease-out hover:bg-blue cursor-pointer hover:text-white">
-                            Посмотреть адреса АЗС
-                        </button>
+                        <Btn text={'Посмотреть адреса АЗС'} />
                     </div>
                     <div className="relative flex items-center w-[702px] h-[398px]  rounded-tl-[64px] rounded-br-[64px] ">
                         <img src={map} alt="map" />
