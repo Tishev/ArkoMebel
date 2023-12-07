@@ -60,7 +60,12 @@ const Header = () => {
                     <Button text={'Личный кабинет'} />
                 </nav>
             </div>
-            {activeCallBack && <PopupCallBack />}
+            {activeCallBack && (
+                <PopupCallBack
+                    activeCallBack={activeCallBack}
+                    setActiveCallBack={setActiveCallBack}
+                />
+            )}
         </header>
     );
 };
