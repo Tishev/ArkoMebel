@@ -5,8 +5,11 @@ import logo from '../../assets/img/header/logo.svg';
 import { Link } from 'react-router-dom';
 import { paths } from '../../paths';
 import PopupCallBack from '../popupCallBack/PopupCallBack';
+import PopupPersonalCabinet from '../popupPersonalCabinet/PopupPersonalCabinet';
 const Header = () => {
     const [activeCallBack, setActiveCallBack] = useState(false);
+    const [activeAuth, setActiveAuth] = useState(false);
+
     const handleClickScroll = () => {
         window.scrollTo({
             top: window.innerHeight,
@@ -17,7 +20,15 @@ const Header = () => {
         <header className={styles.header}>
             <div className="container">
                 <nav className={styles.navigation}>
-                    <img className={styles.logo} src={logo} alt="logo" />
+                    <Link to={paths.home}>
+                        <img
+                            onClick={() => handleClickScroll()}
+                            className={styles.logo}
+                            src={logo}
+                            alt="logo"
+                        />
+                    </Link>
+
                     <ul className={styles.ul}>
                         <Link className={styles.li} to={paths.home}>
                             <li onClick={() => handleClickScroll()} className={styles.li}>
@@ -57,7 +68,11 @@ const Header = () => {
                             Обратный звонок
                         </p>
                     </div>
-                    <Button text={'Личный кабинет'} />
+                    <Button
+                        activeAuth={activeAuth}
+                        setActiveAuth={setActiveAuth}
+                        text={'Личный кабинет'}
+                    />
                 </nav>
             </div>
             {activeCallBack && (
@@ -66,6 +81,7 @@ const Header = () => {
                     setActiveCallBack={setActiveCallBack}
                 />
             )}
+            {activeAuth && <PopupPersonalCabinet setActiveAuth={setActiveAuth} />}
         </header>
     );
 };

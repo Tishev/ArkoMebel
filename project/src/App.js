@@ -9,6 +9,7 @@ import SetAZS from './pages/SetAZS';
 import Vacancies from './pages/Vacancies';
 import ForYurLiz from './pages/ForYurLiz';
 import Contacts from './pages/Contacts';
+import PersonalCabinet from './pages/PersonalCabinet';
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                 <Route path={paths.vacancies} element={<Vacancies />} />
                 <Route path={paths.forYurLiz} element={<ForYurLiz />} />
                 <Route path={paths.contacts} element={<Contacts />} />
+                <Route path={paths.personalCabinet} element={<PersonalCabinet />} />
             </Routes>
             <Footer />
         </Router>

@@ -5,4 +5,5 @@ export const paths = {
     vacancies: '/vacancies',
     forYurLiz: '/for-yur-liz',
     contacts: '/contacts',
+    personalCabinet: '/personal-cabinet',
 };
