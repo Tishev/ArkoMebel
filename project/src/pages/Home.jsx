@@ -106,7 +106,7 @@ const Home = () => {
                             alt="play"
                         />
                     </div>
-                    <div className="flex justify-between mt-[30px]">
+                    <div className="flex justify-between mt-[30px] mb-16">
                         <img src={miniHome} alt="mini-home" />
                         <div className="flex flex-col justify-center items-center w-[700px]">
                             <h2 className="font-semibold text-4xl mb-[25px]">

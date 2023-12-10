@@ -1,10 +1,10 @@
 .item {
-    @apply bg-gray flex flex-col items-center p-4 rounded-2xl;
-
+    @apply bg-gray w-[220px] flex flex-col items-center p-4 rounded-2xl;
+    box-shadow: 2px 3px 30px -10px rgba(34, 60, 80, 0.4);
     .img {
     }
     .name {
-        @apply mt-[15px] mb-[5px] font-medium text-xl;
+        @apply mt-[15px] mb-[5px] text-center font-medium text-xl;
     }
     .rating {
         @apply mb-[15px] font-normal text-base;
